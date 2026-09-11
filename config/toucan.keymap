@@ -187,6 +187,13 @@
             key-positions = <20 19>;
             layers = <0>;
         };
+
+        Space {
+            bindings = <&kp SPACE>;
+            key-positions = <16 15>;
+            layers = <0>;
+            require-prior-idle-ms = <500>;
+        };
     };
 
     keymap {
