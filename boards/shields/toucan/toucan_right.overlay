@@ -77,3 +77,8 @@
 &trackpad_split {
     device = <&tps43_trackpad>;
 };
+
+&vbatt {
+    output-ohms = <469200>;
+    full-ohms = <(1000000 + 469200)>;
+};
