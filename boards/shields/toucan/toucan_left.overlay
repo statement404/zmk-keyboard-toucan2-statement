@@ -50,3 +50,8 @@ nice_view_spi: &spi0 {
 &zip_zoom_mapper {
     status = "okay";
 };
+
+&vbatt {
+    output-ohms = <469200>;
+    full-ohms = <(1000000 + 469200)>;
+};
