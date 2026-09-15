@@ -52,6 +52,6 @@ nice_view_spi: &spi0 {
 };
 
 &vbatt {
-    output-ohms = <469200>;
-    full-ohms = <(1000000 + 469200)>;
+    output-ohms = <500000>;
+    full-ohms = <1500000>;
 };
