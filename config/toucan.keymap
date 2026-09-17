@@ -143,56 +143,56 @@
         Screenshot {
             bindings = <&kp LS(LG(S))>;
             key-positions = <1 2>;
-            require-prior-idle-ms = <500>;
-            layers = <0>;
+            require-prior-idle-ms = <350>;
+            layers = <0 7>;
         };
 
         Refresh {
             bindings = <&kp F5>;
             key-positions = <4 3>;
-            require-prior-idle-ms = <500>;
-            layers = <0>;
+            require-prior-idle-ms = <350>;
+            layers = <0 7>;
         };
 
         Save-Send {
             bindings = <&kp LA(S)>;
             key-positions = <13 25>;
-            layers = <0>;
-            require-prior-idle-ms = <500>;
+            layers = <0 7>;
+            require-prior-idle-ms = <350>;
         };
 
         Copy {
             bindings = <&kp LC(C)>;
             key-positions = <26 27>;
-            require-prior-idle-ms = <500>;
-            layers = <0>;
+            require-prior-idle-ms = <350>;
+            layers = <0 7>;
         };
 
         Paste {
             bindings = <&kp LC(V)>;
             key-positions = <27 28>;
-            layers = <0>;
-            require-prior-idle-ms = <500>;
+            layers = <0 7>;
+            require-prior-idle-ms = <350>;
         };
 
         Cut {
             bindings = <&kp LC(X)>;
             key-positions = <28 26>;
-            require-prior-idle-ms = <500>;
-            layers = <0>;
+            require-prior-idle-ms = <350>;
+            layers = <0 7>;
         };
 
         Caps-Word {
             bindings = <&caps_word>;
             key-positions = <20 19>;
-            layers = <0>;
+            layers = <0 7>;
         };
 
         Space {
             bindings = <&kp SPACE>;
             key-positions = <16 15>;
-            layers = <0>;
-            require-prior-idle-ms = <500>;
+            layers = <0 7>;
+            require-prior-idle-ms = <350>;
         };
 
         Enter {
