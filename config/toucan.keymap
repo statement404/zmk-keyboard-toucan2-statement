@@ -201,6 +201,13 @@
             layers = <0 7>;
             require-prior-idle-ms = <350>;
         };
+
+        Esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 13>;
+            require-prior-idle-ms = <350>;
+            layers = <0 7>;
+        };
     };
 
     keymap {
