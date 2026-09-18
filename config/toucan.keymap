@@ -136,44 +136,6 @@
         };
     };
 
-    macros {
-        // Select a BT profile, then disconnect every other profile.
-        // Order matters: ZMK will silently reconnect the active profile if
-        // you disconnect it before selecting a different one - see
-        // https://zmk.dev/docs/behaviors/bluetooth. Selecting first, then
-        // disconnecting the rest, is what actually keeps them disconnected.
-
-        bt0: bt_profile_0 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0>, <&bt BT_DISC 1>, <&bt BT_DISC 2>, <&bt BT_DISC 3>, <&bt BT_DISC 4>;
-        };
-
-        bt1: bt_profile_1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1>, <&bt BT_DISC 0>, <&bt BT_DISC 2>, <&bt BT_DISC 3>, <&bt BT_DISC 4>;
-        };
-
-        bt2: bt_profile_2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2>, <&bt BT_DISC 0>, <&bt BT_DISC 1>, <&bt BT_DISC 3>, <&bt BT_DISC 4>;
-        };
-
-        bt3: bt_profile_3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 3>, <&bt BT_DISC 0>, <&bt BT_DISC 1>, <&bt BT_DISC 2>, <&bt BT_DISC 4>;
-        };
-
-        bt4: bt_profile_4 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 4>, <&bt BT_DISC 0>, <&bt BT_DISC 1>, <&bt BT_DISC 2>, <&bt BT_DISC 3>;
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
         timeout-ms = <25>;
@@ -264,7 +226,7 @@
         etc {
             display-name = "ETC";
             bindings = <
-&none  &none        &none         &none           &none      &none  &bt0          &bt1          &bt2          &bt3          &bt4          &none
+&none  &none        &none         &none           &none      &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
 &none  &kp LGUI     &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none  &none         &none         &none         &none         &none         &none
 &none  &bootloader  &none         &none           &none      &none  &bt BT_CLR    &none         &none         &none         &bootloader   &none
                                   &none           &none      &none  &none         &none         &none
