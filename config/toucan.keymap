@@ -202,6 +202,11 @@
             require-prior-idle-ms = <350>;
             layers = <0 7>;
         };
+
+        Backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <17 29>;
+        };
     };
 
     keymap {
