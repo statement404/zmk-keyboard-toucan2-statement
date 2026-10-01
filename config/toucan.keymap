@@ -206,6 +206,8 @@
         Backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <17 29>;
+            layers = <0 7>;
+            require-prior-idle-ms = <350>;
         };
     };
 
