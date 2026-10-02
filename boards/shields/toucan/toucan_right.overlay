@@ -80,5 +80,5 @@
 
 &vbatt {
     output-ohms = <500000>;
-    full-ohms = <1512000>;
+    full-ohms = <1500000>;
 };
