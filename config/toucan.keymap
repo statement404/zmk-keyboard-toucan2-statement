@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define BASE 0
+#define MAIN 0
 #define ETC 1
 #define NAV 2
 #define MED 3
@@ -11,7 +11,7 @@
 #define NUM 5
 #define FUN 6
 #define MOU 7
-#define GAL 8
+#define QWER 8
 
 // Shared home row mod timing - tweak these two and it applies everywhere below
 
@@ -217,9 +217,9 @@
         main {
             display-name = "MAIN";
             bindings = <
-&none  &kp Q        &kp W        &kp E           &kp R              &kp T        &kp Y          &kp U          &kp I           &kp O        &kp P          &none
-&none  &hml LGUI A  &hml LALT S  &hms_l LSHFT D  &hml LCTRL F       &kp G        &kp H          &hmr RCTRL J   &hms_r RSHFT K  &hmr RALT L  &hmr RGUI SQT  &none
-&none  &kp Z        &kp X        &kp C           &kp V              &kp B        &kp N          &kp M          &comma_semi     &dot_colon   &qmark_bang    &none
+&none  &kp B        &kp L        &kp D           &kp C              &kp V        &kp J          &kp Y          &kp O           &kp U        &comma_semi  &none
+&none  &hml LGUI N  &hml LALT R  &hms_l LSHFT T  &hml LCTRL S       &kp G        &kp P          &hmr RCTRL H   &hms_r RSHFT A  &hmr RALT E  &hmr RGUI I  &none
+&none  &kp X        &kp Q        &kp M           &kp W              &kp Z        &kp K          &kp F          &kp SQT         &qmark_bang  &dot_colon   &none
                                  &lt ETC DELETE  &lt NAV BACKSPACE  &lt MED TAB  &lt SYM ENTER  &lt NUM SPACE  &lt FUN ESCAPE
             >;
         };
@@ -294,12 +294,12 @@
             >;
         };
 
-        gal {
-            display-name = "GAL";
+        qwer {
+            display-name = "QWER";
             bindings = <
-&none  &kp B        &kp L        &kp D           &kp C              &kp V        &kp J          &kp Y          &kp O           &kp U        &comma_semi  &none
-&none  &hml LGUI N  &hml LALT R  &hms_l LSHFT T  &hml LCTRL S       &kp G        &kp P          &hmr RCTRL H   &hms_r RSHFT A  &hmr RALT E  &hmr RGUI I  &none
-&none  &kp X        &kp Q        &kp M           &kp W              &kp Z        &kp K          &kp F          &kp SQT         &qmark_bang  &dot_colon   &none
+&none  &kp Q        &kp W        &kp E           &kp R              &kp T        &kp Y          &kp U          &kp I           &kp O        &kp P          &none
+&none  &hml LGUI A  &hml LALT S  &hms_l LSHFT D  &hml LCTRL F       &kp G        &kp H          &hmr RCTRL J   &hms_r RSHFT K  &hmr RALT L  &hmr RGUI SQT  &none
+&none  &kp Z        &kp X        &kp C           &kp V              &kp B        &kp N          &kp M          &comma_semi     &dot_colon   &qmark_bang    &none
                                  &lt ETC DELETE  &lt NAV BACKSPACE  &lt MED TAB  &lt SYM ENTER  &lt NUM SPACE  &lt FUN ESCAPE
             >;
         };
